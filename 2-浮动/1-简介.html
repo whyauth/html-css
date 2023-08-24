@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img {
+            height: 200px;
+            float: right;
+            margin-right: 0.5em;
+
+        }
+        div {
+            width: 600px;
+            height: 400px;
+            background-color: skyblue;
+        }
+
+        .letter::first-letter {
+            font-size: 50px;
+            float: left;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- 浮动一开始被用来： 文字环绕图片， 文字环绕文字的。后来被用作布局方式之一 -->
+
+    <div class="test">
+        <img src="../images/1.jpg" alt="">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eaque hic incidunt non, blanditiis optio excepturi officia dolores, ullam delectus
+         nostrum a tenetur necessitatibus est. Iusto cupiditate eos impedit perferendis?
+    </div>
+
+    <hr/>
+
+    <!-- 文字环绕文字 -->
+
+    <div class="letter">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto tempora fuga praesentium, impedit incidunt dolor nulla cum amet reprehenderit nihil deserunt labore et, voluptas aperiam perferendis laudantium alias quis aliquam rerum explicabo. Perferendis illum eligendi perspiciatis libero quo commodi dolorum dicta culpa, voluptatibus exercitationem, molestiae sunt animi magnam tempore explicabo.
+    </div>
+
+</body>
+</html>

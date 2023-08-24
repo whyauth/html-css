@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 800px;
+            border: 1px solid;
+            /* 第一张解决方案 */
+            /* height: 222px; */
+
+            /* 第二种解决方案 */
+            float: left;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            border: 1px solid;
+            margin: 10px;
+            /* float: left; */
+        }
+        .box1,.box2,.box3 {
+            float: left;
+        }
+        .box4 {
+            clear: both;
+        }
+        .outer2 {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4">3445</div>
+    </div>
+    <div class="outer2">
+        <div class="name">111111</div>
+        <div class="name">222222</div>
+        <div class="name">333333</div>
+    </div>
+    div.out
+</body>
+</html>

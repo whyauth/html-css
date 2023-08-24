@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .left {
+            float: left;
+        }
+        .right {
+            float: right;
+        }
+        .clear {
+
+        }
+        .clear::after {
+            content: '';
+            display: block;
+            clear:both;
+        }
+
+        .container {
+            width: 960px;
+            margin: 0 auto;
+
+            /* text- 开头的有继承特性 */
+            text-align: center;
+        }
+
+        .logo {
+            width: 200px;
+        }
+        .banner1 {
+            width: 540px;
+            margin: 0 10px;
+        }
+        .banner2 {
+            width: 200px;
+        }
+        .logo,.banner1,.banner2 {
+            height: 80px;
+            line-height: 80px;
+            background-color: #ccc;
+        }
+        .menu {
+            height: 30px;
+            background-color: #ccc;
+            margin-top: 10px;
+            line-height: 30px;
+        }
+        .item1,.item2 {
+            width: 368px;
+            height: 180px;
+            border: 1px solid black;
+            margin-top: 10px;
+            line-height: 180px;
+            margin-right: 10px;
+        }
+        .item3,.item4,.item5,.item6 {
+            width: 178px;
+            height: 198px;
+            border: 1px solid black;
+            margin-right: 10px;
+            margin-top: 10px;
+            line-height: 178px;
+        }
+        .item7,.item8,.item9 {
+            width: 198px;
+            height: 128px;
+            border: 1px solid black;
+            margin-top: 10px;
+            line-height: 128px;
+        }
+        .footer {
+            width: 960px;
+            height: 60px;
+            background-color: #ccc;
+            line-height: 60px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <!-- 头部 -->
+        <div class="page-header clear">
+            <div class="logo left">logo</div>
+            <div class="banner1 left">banner1</div>
+            <div class="banner2 left">banner2</div>
+        </div>
+        <!-- 菜单 -->
+        <div class="menu">菜单</div>
+        <!-- 内容区 -->
+        <div class="content clear">
+            <div class="leftfix left">
+                <div class="top clear">
+                    <div class="item1 left">栏目一</div>
+                    <div class="item2 left">栏目二</div>
+                </div>
+                <div class="bottom clear">
+                    <div class="item3 left">栏目三</div>
+                    <div class="item4 left">栏目四</div>
+                    <div class="item5 left">栏目五</div>
+                    <div class="item6 left">栏目六</div>
+                </div>
+            </div>
+            <div class="rightfix right">
+               <div class="item7">栏目七</div>
+               <div class="item8">栏目八</div>
+               <div class="item9">栏目九</div>
+            </div>
+        </div>
+        <div class="footer">页脚</div>
+    </div>
+</body>
+</html>
